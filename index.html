@@ -255,6 +255,13 @@ h3 {
   font-size: 1.08rem;
 }
 
+.contact-info {
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .link-row,
 .contact-actions,
 .publication-links {
@@ -454,6 +461,23 @@ h3 {
   padding: 20px;
 }
 
+.award-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.award-list li {
+  padding: 10px 0;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.award-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
 .contact-band {
   width: calc(100% - 32px);
   max-width: var(--max-width);
@@ -648,6 +672,7 @@ if (navToggle && navLinks) {
         "@type": "Person",
         "name": "Li Yiming",
         "email": "mailto:dawn_lee@hust.edu.cn",
+        "telephone": "+86 15605151353",
         "jobTitle": "Master's Student in Mechanical Engineering",
         "affiliation": {
           "@type": "CollegeOrUniversity",
@@ -665,7 +690,9 @@ if (navToggle && navLinks) {
           "Nonlinear Mechanics",
           "Artificial Intelligence for Design",
           "Flexoelectric Actuators",
-          "MEMS Scanning Mirrors"
+          "MEMS Scanning Mirrors",
+          "Physics-Informed Neural Networks",
+          "Genetic Algorithms"
         ]
       }
     </script>
@@ -686,8 +713,8 @@ if (navToggle && navLinks) {
         <div class="nav-links" id="site-menu">
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
-          <a href="#projects">Projects</a>
-          <a href="#cv">CV</a>
+          <a href="#projects">Presentations</a>
+          <a href="#awards">Honors</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -699,25 +726,27 @@ if (navToggle && navLinks) {
           <p class="eyebrow">Academic Homepage</p>
           <h1 id="hero-title">Li Yiming</h1>
           <p class="role">
-            M.S. Student in Mechanical Engineering, Huazhong University of Science and Technology
+            M.S. Student in Mechanical Engineering<br>Huazhong University of Science and Technology
           </p>
+          <div class="contact-info">
+            <p>📧 <a href="mailto:dawn_lee@hust.edu.cn">dawn_lee@hust.edu.cn</a></p>
+            <p>📱 +86 15605151353</p>
+          </div>
           <p class="summary">
-            I work on microelectromechanical systems, nonlinear mechanics, and
-            AI-assisted design. My current research focuses on actuator optimization,
-            flexoelectric structures, and MEMS scanning mirrors.
+            I work on microelectromechanical systems (MEMS), nonlinear mechanics, and AI-assisted design. My current research focuses on actuator optimization using physics-informed neural networks and genetic algorithms, flexoelectric structures, and MEMS scanning mirrors.
           </p>
           <div class="link-row" aria-label="Profile links">
             <a href="mailto:dawn_lee@hust.edu.cn">Email</a>
             <a href="#publications">Publications</a>
             <a href="https://www.researchgate.net/profile/Yiming-Li-94?ev=hdr_xprf">ResearchGate</a>
-            <a href="#projects">Research Outputs</a>
-            <a href="#cv">CV Summary</a>
+            <a href="#projects">Presentations</a>
+            <a href="#awards">Honors</a>
           </div>
         </div>
         <aside class="profile-panel" aria-label="Profile summary">
           <img
             class="profile-photo"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20560%20560%22%20role%3D%22img%22%20aria-labelledby%3D%22title%20desc%22%3E%0A%20%20%3Ctitle%20id%3D%22title%22%3EProfile%20photo%20placeholder%3C/title%3E%0A%20%20%3Cdesc%20id%3D%22desc%22%3EA%20clean%20placeholder%20image%20for%20an%20academic%20profile%20photo.%3C/desc%3E%0A%20%20%3Crect%20width%3D%22560%22%20height%3D%22560%22%20fill%3D%22%23eef2ea%22/%3E%0A%20%20%3Cpath%20d%3D%22M0%20420%20C120%20360%20190%20462%20294%20397%20C398%20332%20442%20336%20560%20274%20L560%20560%20L0%20560%20Z%22%20fill%3D%22%23d9e1d2%22/%3E%0A%20%20%3Cpath%20d%3D%22M0%20150%20C120%2092%20201%20173%20308%20124%20C413%2076%20469%2092%20560%2042%20L560%200%20L0%200%20Z%22%20fill%3D%22%23f7f8f4%22/%3E%0A%20%20%3Ccircle%20cx%3D%22280%22%20cy%3D%22214%22%20r%3D%2282%22%20fill%3D%22%23546e5f%22/%3E%0A%20%20%3Cpath%20d%3D%22M138%20468%20C154%20365%20205%20315%20280%20315%20C355%20315%20406%20365%20422%20468%20Z%22%20fill%3D%22%2317191c%22/%3E%0A%20%20%3Cpath%20d%3D%22M180%20474%20C196%20402%20231%20365%20280%20365%20C329%20365%20364%20402%20380%20474%20Z%22%20fill%3D%22%230f6b6d%22/%3E%0A%20%20%3Crect%20x%3D%2284%22%20y%3D%2282%22%20width%3D%2296%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23a6573f%22/%3E%0A%20%20%3Crect%20x%3D%2284%22%20y%3D%22108%22%20width%3D%22144%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%239b7a27%22/%3E%0A%20%20%3Crect%20x%3D%22348%22%20y%3D%2286%22%20width%3D%22128%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%230f6b6d%22/%3E%0A%20%20%3Crect%20x%3D%22376%22%20y%3D%22112%22%20width%3D%22100%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23546e5f%22/%3E%0A%3C/svg%3E%0A"
+            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20560%20560%22%20role%3D%22img%22%20aria-labelledby%3D%22title%20desc%22%3E%0A%3Ctitle%20id%3D%22title%22%3EProfile%20Photo%3C/title%3E%0A%3Cdesc%20id%3D%22desc%22%3EPlaceholder%3C/desc%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22560%22%20fill%3D%22%23edf1ea%22/%3E%0A%3C/svg%3E"
             alt="Portrait placeholder for Li Yiming"
             width="280"
             height="280"
@@ -733,7 +762,7 @@ if (navToggle && navLinks) {
             </div>
             <div>
               <dt>Background</dt>
-              <dd>B.Eng., NUAA; M.S. student, HUST</dd>
+              <dd>B.Eng., NUAA; M.S., HUST</dd>
             </div>
           </dl>
         </aside>
@@ -750,7 +779,7 @@ if (navToggle && navLinks) {
             <h3>Microelectromechanical Systems</h3>
             <p>
               Design and optimization of MEMS devices, including piezoelectric MEMS
-              scanning mirrors and micro-actuation systems.
+              scanning mirrors and micro-actuation systems using genetic algorithms.
             </p>
           </article>
           <article class="topic-card">
@@ -758,15 +787,15 @@ if (navToggle && navLinks) {
             <h3>Nonlinear Mechanics</h3>
             <p>
               Modeling and optimization of beam and shell structures with multiple
-              flexoelectric actuators.
+              flexoelectric actuators using sequential quadratic programming and Newton-Raphson iteration.
             </p>
           </article>
           <article class="topic-card">
             <span class="topic-index">03</span>
             <h3>AI for Design</h3>
             <p>
-              Physics-informed neural networks, genetic algorithms, and data-driven
-              methods for structural and actuator design.
+              Physics-informed neural networks (PINNs), genetic algorithms, and data-driven
+              methods for structural and actuator optimization.
             </p>
           </article>
         </div>
@@ -775,25 +804,26 @@ if (navToggle && navLinks) {
       <section class="section section-split" id="publications" aria-labelledby="publications-title">
         <div class="section-heading">
           <p class="eyebrow">Selected Work</p>
-          <h2 id="publications-title">Publications</h2>
+          <h2 id="publications-title">Scholarly Publications</h2>
           <p>
-            Selected journal papers, accepted work, and manuscripts under review.
-            DOI links are included where available.
+            Five journal papers and manuscripts. Two first-author papers published in JCR Q1 journals.
+            One first-author paper accepted at Nature Partner Journal.
           </p>
         </div>
         <div class="publication-list">
           <article class="publication-card">
-            <div class="publication-year">2026</div>
+            <div class="publication-year">2024</div>
             <div>
               <h3>
-                Non-Parametric Design and Multi-Objective Optimization of MEMS
-                Scanning Mirrors via Pixel-Based Genetic Algorithms
+                Optimization of Cantilever Beams with Multiple Flexoelectric Actuators
+                Based on Newton-Raphson Iteration
               </h3>
-              <p class="authors">Yiming Li, Hanwen Guo, Junya Wang</p>
-              <p class="venue">Microsystems &amp; Nanoengineering. Accepted.</p>
+              <p class="authors">Yiming Li, Chen Chen, Mu Fan</p>
+              <p class="venue">Acta Mechanica</p>
               <div class="publication-links">
+                <a href="https://doi.org/10.1007/s00707-024-04085-9">DOI</a>
                 <span class="status-pill">First author</span>
-                <span class="status-pill">Accepted</span>
+                <span class="status-pill">JCR Q1</span>
               </div>
             </div>
           </article>
@@ -805,7 +835,7 @@ if (navToggle && navLinks) {
                 Based on Sequential Quadratic Programming
               </h3>
               <p class="authors">Yiming Li, Jie Zhang, Mu Fan, Zhongmin Xiao</p>
-              <p class="venue">International Journal of Mechanics and Materials in Design.</p>
+              <p class="venue">International Journal of Mechanics and Materials in Design</p>
               <div class="publication-links">
                 <a href="https://doi.org/10.1007/s10999-025-09850-9">DOI</a>
                 <span class="status-pill">First author</span>
@@ -814,18 +844,18 @@ if (navToggle && navLinks) {
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-year">2024</div>
+            <div class="publication-year">2026</div>
             <div>
               <h3>
-                Optimization of Cantilever Beams with Multiple Flexoelectric Actuators
-                Based on Newton-Raphson Iteration
+                Non-Parametric Design and Multi-Objective Optimization of MEMS
+                Scanning Mirrors via Pixel-Based Genetic Algorithms
               </h3>
-              <p class="authors">Yiming Li, Chen Chen, Mu Fan</p>
-              <p class="venue">Acta Mechanica.</p>
+              <p class="authors">Yiming Li, Hanwen Guo, Junya Wang</p>
+              <p class="venue">Microsystems & Nanoengineering (Nature Partner Journal)</p>
               <div class="publication-links">
-                <a href="https://doi.org/10.1007/s00707-024-04085-9">DOI</a>
                 <span class="status-pill">First author</span>
-                <span class="status-pill">JCR Q1</span>
+                <span class="status-pill">Accepted</span>
+                <span class="status-pill">IF=11.1</span>
               </div>
             </div>
           </article>
@@ -837,7 +867,7 @@ if (navToggle && navLinks) {
                 Parabolic Shell Structures
               </h3>
               <p class="authors">Yiming Li, Jie Zhang, Mu Fan</p>
-              <p class="venue">Journal of Sound and Vibration. Under review.</p>
+              <p class="venue">Journal of Sound and Vibration</p>
             </div>
           </article>
           <article class="publication-card">
@@ -845,7 +875,7 @@ if (navToggle && navLinks) {
             <div>
               <h3>Quantization of Flexoelectric Modal Signals in Parabolic Shell Structures</h3>
               <p class="authors">Tongyu Yin, Yiming Li</p>
-              <p class="venue">Physical Review Applied. Under review.</p>
+              <p class="venue">Physical Review Applied</p>
             </div>
           </article>
         </div>
@@ -854,15 +884,23 @@ if (navToggle && navLinks) {
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
           <p class="eyebrow">Research Outputs</p>
-          <h2 id="projects-title">Presentations, Patent, and Technical Work</h2>
+          <h2 id="projects-title">Conference Presentations & Patent</h2>
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-meta">Conference</div>
+            <div class="project-meta">Conference 2025</div>
             <h3>BP Neural Network-Based Linear Control for PZT Piezoelectric MEMS Scanning Mirrors</h3>
             <p>
               2025 Annual Conference of the China Instrument and Control Society,
               Changsha, China. Oral and poster presentation.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Conference 2026</div>
+            <h3>Design of a Single-Ring Dual-Axis Resonant Piezoelectric MEMS Micromirror</h3>
+            <p>
+              2026 Annual Conference of the China Instrument and Control Society,
+              Hefei, China, September 2026. Oral and poster presentation.
             </p>
           </article>
           <article class="project-card">
@@ -877,8 +915,24 @@ if (navToggle && navLinks) {
             <div class="project-meta">Patent</div>
             <h3>MEMS Large-Angle Scanning Mirror Based on Genetic Algorithm</h3>
             <p>
-              Patent title: A design of MEMS large-angle scanning mirror based on
-              genetic algorithm and its structure. Status: substantive examination stage.
+              Title: A design of MEMS large-angle scanning mirror based on
+              genetic algorithm and its structure. Status: Substantive examination stage.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Teaching</div>
+            <h3>Teaching Assistant, Advances in Modern Mechanics</h3>
+            <p>
+              NUAA, Spring 2023. Received 4.8/5.0 average rating for teaching effectiveness
+              from student evaluations.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Mentoring</div>
+            <h3>Co-Advisor for Undergraduate Research</h3>
+            <p>
+              Supervised junior students on data analysis for actuator design (2023-2024).
+              Resulted in Outstanding Undergraduate Research Project — School-Level Recognition.
             </p>
           </article>
         </div>
@@ -887,10 +941,10 @@ if (navToggle && navLinks) {
       <section class="section section-split" id="cv" aria-labelledby="cv-title">
         <div class="section-heading">
           <p class="eyebrow">Background</p>
-          <h2 id="cv-title">Education, Honors, and Skills</h2>
+          <h2 id="cv-title">Education & Technical Skills</h2>
           <p>
-            A compact public CV summary. Phone number and reference contacts are omitted
-            from this web version.
+            Current Master's student at HUST with strong foundation in mechanical engineering,
+            MEMS design, and computational methods.
           </p>
         </div>
         <div class="timeline">
@@ -911,30 +965,43 @@ if (navToggle && navLinks) {
             </p>
           </article>
           <article class="timeline-item">
-            <span class="timeline-date">Honors</span>
-            <h3>Selected Awards</h3>
+            <span class="timeline-date">Technical Skills</span>
+            <h3>Software & Experimental</h3>
             <p>
-              National Undergraduate Mathematics Competition Third Prize; Mathematical
-              Contest in Modeling Third Prize; First-Class Academic Scholarship at NUAA
-              for four years; Outstanding Teaching Assistant Award.
+              MATLAB, Python, COMSOL Multiphysics, ANSYS, SolidWorks CAD. 
+              MEMS fabrication basics, piezoresistive sensors, micro-actuation testing, 
+              dynamical system identification.
             </p>
           </article>
           <article class="timeline-item">
-            <span class="timeline-date">Skills</span>
-            <h3>Technical Toolkit</h3>
+            <span class="timeline-date">Languages</span>
+            <h3>Multilingual</h3>
             <p>
-              MATLAB, Python, COMSOL Multiphysics, ANSYS, SolidWorks, MEMS fabrication
-              basics, piezoresistive sensors, micro-actuation testing, and dynamical
-              system identification.
+              Chinese (Native), English (IELTS 6.5), Japanese (N2).
             </p>
           </article>
         </div>
       </section>
 
+      <section class="section" id="awards" aria-labelledby="awards-title">
+        <div class="section-heading">
+          <p class="eyebrow">Recognition</p>
+          <h2 id="awards-title">Selected Awards & Honors</h2>
+        </div>
+        <ul class="award-list">
+          <li><strong>First-Class Graduate Scholarship</strong>, Huazhong University of Science and Technology, 2024</li>
+          <li><strong>National Undergraduate Mathematics Competition</strong> (Third Prize), Chinese Mathematical Society, 2022</li>
+          <li><strong>Mathematical Contest in Modeling</strong> (Third Prize, International Level), Consortium for Mathematics and Its Applications, 2023</li>
+          <li><strong>First-Class Academic Scholarship</strong> (Four Times), Nanjing University of Aeronautics and Astronautics, 2021-2024</li>
+          <li><strong>Outstanding Teaching Assistant Award</strong>, Nanjing University of Aeronautics and Astronautics, 2023</li>
+          <li><strong>Outstanding Student Leader Award</strong> (Three Times), Nanjing University of Aeronautics and Astronautics, 2021-2023</li>
+        </ul>
+      </section>
+
       <section class="contact-band" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">I am open to research discussion and collaboration.</h2>
+          <h2 id="contact-title">Open to research discussion and collaboration</h2>
         </div>
         <div class="contact-actions">
           <a class="primary-action" href="mailto:dawn_lee@hust.edu.cn">dawn_lee@hust.edu.cn</a>
