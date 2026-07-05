@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Li Yiming | Academic Homepage</title>
+    <meta
+      name="description"
+      content="Academic homepage for Li Yiming: MEMS, nonlinear mechanics, AI for design, publications, projects, and contact information."
+    >
+    <meta name="theme-color" content="#f7f8f4">
+    <meta property="og:title" content="Li Yiming | Academic Homepage">
+    <meta
+      property="og:description"
+      content="Research in MEMS, nonlinear mechanics, and AI-assisted design."
+    >
+    <meta property="og:type" content="website">
+    <style>
+:root {
+  color-scheme: light;
+  --paper: #f7f8f4;
+  --surface: #ffffff;
+  --ink: #17191c;
+  --muted: #5f666d;
+  --line: #dfe3da;
+  --sage: #546e5f;
+  --teal: #0f6b6d;
+  --clay: #a6573f;
+  --gold: #9b7a27;
+  --shadow: 0 22px 60px rgba(23, 25, 28, 0.11);
+  --max-width: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(84, 110, 95, 0.08), rgba(255, 255, 255, 0) 300px),
+    var(--paper);
+  color: var(--ink);
+  font-family:
+    "Aptos", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: rgba(15, 107, 109, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: var(--teal);
+  text-decoration-color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.skip-link {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  transform: translateY(-150%);
+  background: var(--ink);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid rgba(223, 227, 218, 0.9);
+  background: rgba(247, 248, 244, 0.9);
+  backdrop-filter: blur(18px);
+}
+
+.nav {
+  width: calc(100% - 32px);
+  max-width: var(--max-width);
+  min-height: 68px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-width: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  min-width: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.nav-toggle-bars,
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 0 auto;
+  background: var(--ink);
+  content: "";
+}
+
+.nav-toggle-bars::before {
+  transform: translateY(-6px);
+}
+
+.nav-toggle-bars::after {
+  transform: translateY(4px);
+}
+
+.hero {
+  width: calc(100% - 32px);
+  max-width: var(--max-width);
+  min-height: calc(100vh - 68px);
+  margin: 0 auto;
+  padding: 76px 0 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  align-items: center;
+  gap: 56px;
+}
+
+.hero-copy,
+.profile-panel,
+.section-heading,
+.link-row,
+.contact-actions {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4rem;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.role {
+  margin-bottom: 20px;
+  color: var(--sage);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.summary {
+  max-width: 700px;
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.link-row,
+.contact-actions,
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.link-row a,
+.publication-links a,
+.contact-actions a,
+.primary-action {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 13px;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-row a:hover,
+.publication-links a:hover,
+.contact-actions a:hover,
+.primary-action:hover {
+  border-color: rgba(15, 107, 109, 0.45);
+  color: var(--teal);
+}
+
+.primary-action {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.primary-action:hover {
+  background: var(--teal);
+  color: #fff;
+}
+
+.profile-panel {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #edf1ea;
+}
+
+.quick-facts {
+  margin: 0;
+  padding: 20px;
+}
+
+.quick-facts div {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 16px;
+  padding: 13px 0;
+  border-top: 1px solid var(--line);
+}
+
+.quick-facts div:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.quick-facts dt {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.quick-facts dd {
+  margin: 0;
+}
+
+.section {
+  width: calc(100% - 32px);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 72px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-heading {
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.section-heading p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.research-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.topic-card,
+.project-card,
+.publication-card,
+.timeline-item {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.topic-card,
+.project-card {
+  min-height: 230px;
+  padding: 22px;
+}
+
+.topic-card p,
+.project-card p,
+.publication-card p,
+.timeline-item p {
+  color: var(--muted);
+}
+
+.topic-index,
+.project-meta,
+.timeline-date,
+.publication-year {
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-split {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.44fr) minmax(0, 0.56fr);
+  gap: 52px;
+}
+
+.publication-list,
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.authors,
+.venue {
+  margin-bottom: 8px;
+}
+
+.publication-links {
+  margin-top: 12px;
+}
+
+.publication-links a,
+.status-pill {
+  min-height: 34px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(84, 110, 95, 0.22);
+  border-radius: 8px;
+  background: rgba(84, 110, 95, 0.08);
+  color: var(--sage);
+  font-weight: 800;
+}
+
+.project-card a {
+  font-weight: 800;
+}
+
+.timeline-item {
+  padding: 20px;
+}
+
+.contact-band {
+  width: calc(100% - 32px);
+  max-width: var(--max-width);
+  margin: 0 auto 48px;
+  padding: 34px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 28px;
+  align-items: center;
+  border-radius: 8px;
+  background: #222622;
+  color: #fff;
+}
+
+.contact-band .eyebrow {
+  color: #d6a853;
+}
+
+.contact-band h2 {
+  max-width: 760px;
+  margin-bottom: 0;
+}
+
+.contact-actions a {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.contact-actions .primary-action {
+  background: #fff;
+  color: var(--ink);
+}
+
+.site-footer {
+  width: calc(100% - 32px);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin-bottom: 0;
+}
+
+.not-found {
+  width: calc(100% - 32px);
+  max-width: 720px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  align-content: center;
+}
+
+.not-found h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 880px) {
+  .nav {
+    min-height: 64px;
+  }
+
+  .nav-toggle {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 16px;
+    right: 16px;
+    display: none;
+    padding: 14px;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 48px 0;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .profile-panel {
+    max-width: 420px;
+  }
+
+  .research-grid,
+  .project-grid,
+  .section-split,
+  .contact-band {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-band {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero,
+  .section {
+    width: calc(100% - 24px);
+    max-width: var(--max-width);
+  }
+
+  h1 {
+    font-size: 2.35rem;
+  }
+
+  .publication-card,
+  .quick-facts div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .link-row a {
+    flex: 1 1 calc(50% - 10px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-actions a {
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+}
+
+    </style>
+    <script>
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+const year = document.querySelector("#current-year");
+
+if (year) {
+  year.textContent = new Date().getFullYear().toString();
+}
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen.toString());
+  });
+
+  navLinks.addEventListener("click", (event) => {
+    if (event.target instanceof HTMLAnchorElement) {
+      navLinks.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
+
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Li Yiming",
+        "email": "mailto:dawn_lee@hust.edu.cn",
+        "jobTitle": "Master's Student in Mechanical Engineering",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Huazhong University of Science and Technology"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Nanjing University of Aeronautics and Astronautics"
+        },
+        "sameAs": [
+          "https://www.researchgate.net/profile/Yiming-Li-94?ev=hdr_xprf"
+        ],
+        "knowsAbout": [
+          "Microelectromechanical Systems",
+          "Nonlinear Mechanics",
+          "Artificial Intelligence for Design",
+          "Flexoelectric Actuators",
+          "MEMS Scanning Mirrors"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Homepage">
+          <span class="brand-mark" aria-hidden="true">LY</span>
+          <span>Li Yiming</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Academic Homepage</p>
+          <h1 id="hero-title">Li Yiming</h1>
+          <p class="role">
+            M.S. Student in Mechanical Engineering, Huazhong University of Science and Technology
+          </p>
+          <p class="summary">
+            I work on microelectromechanical systems, nonlinear mechanics, and
+            AI-assisted design. My current research focuses on actuator optimization,
+            flexoelectric structures, and MEMS scanning mirrors.
+          </p>
+          <div class="link-row" aria-label="Profile links">
+            <a href="mailto:dawn_lee@hust.edu.cn">Email</a>
+            <a href="#publications">Publications</a>
+            <a href="https://www.researchgate.net/profile/Yiming-Li-94?ev=hdr_xprf">ResearchGate</a>
+            <a href="#projects">Research Outputs</a>
+            <a href="#cv">CV Summary</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Profile summary">
+          <img
+            class="profile-photo"
+            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20560%20560%22%20role%3D%22img%22%20aria-labelledby%3D%22title%20desc%22%3E%0A%20%20%3Ctitle%20id%3D%22title%22%3EProfile%20photo%20placeholder%3C/title%3E%0A%20%20%3Cdesc%20id%3D%22desc%22%3EA%20clean%20placeholder%20image%20for%20an%20academic%20profile%20photo.%3C/desc%3E%0A%20%20%3Crect%20width%3D%22560%22%20height%3D%22560%22%20fill%3D%22%23eef2ea%22/%3E%0A%20%20%3Cpath%20d%3D%22M0%20420%20C120%20360%20190%20462%20294%20397%20C398%20332%20442%20336%20560%20274%20L560%20560%20L0%20560%20Z%22%20fill%3D%22%23d9e1d2%22/%3E%0A%20%20%3Cpath%20d%3D%22M0%20150%20C120%2092%20201%20173%20308%20124%20C413%2076%20469%2092%20560%2042%20L560%200%20L0%200%20Z%22%20fill%3D%22%23f7f8f4%22/%3E%0A%20%20%3Ccircle%20cx%3D%22280%22%20cy%3D%22214%22%20r%3D%2282%22%20fill%3D%22%23546e5f%22/%3E%0A%20%20%3Cpath%20d%3D%22M138%20468%20C154%20365%20205%20315%20280%20315%20C355%20315%20406%20365%20422%20468%20Z%22%20fill%3D%22%2317191c%22/%3E%0A%20%20%3Cpath%20d%3D%22M180%20474%20C196%20402%20231%20365%20280%20365%20C329%20365%20364%20402%20380%20474%20Z%22%20fill%3D%22%230f6b6d%22/%3E%0A%20%20%3Crect%20x%3D%2284%22%20y%3D%2282%22%20width%3D%2296%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23a6573f%22/%3E%0A%20%20%3Crect%20x%3D%2284%22%20y%3D%22108%22%20width%3D%22144%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%239b7a27%22/%3E%0A%20%20%3Crect%20x%3D%22348%22%20y%3D%2286%22%20width%3D%22128%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%230f6b6d%22/%3E%0A%20%20%3Crect%20x%3D%22376%22%20y%3D%22112%22%20width%3D%22100%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23546e5f%22/%3E%0A%3C/svg%3E%0A"
+            alt="Portrait placeholder for Li Yiming"
+            width="280"
+            height="280"
+          >
+          <dl class="quick-facts">
+            <div>
+              <dt>Focus</dt>
+              <dd>MEMS, nonlinear mechanics, AI for design</dd>
+            </div>
+            <div>
+              <dt>Affiliation</dt>
+              <dd>HUST, Wuhan, China</dd>
+            </div>
+            <div>
+              <dt>Background</dt>
+              <dd>B.Eng., NUAA; M.S. student, HUST</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2 id="research-title">Research Interests</h2>
+        </div>
+        <div class="research-grid">
+          <article class="topic-card">
+            <span class="topic-index">01</span>
+            <h3>Microelectromechanical Systems</h3>
+            <p>
+              Design and optimization of MEMS devices, including piezoelectric MEMS
+              scanning mirrors and micro-actuation systems.
+            </p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-index">02</span>
+            <h3>Nonlinear Mechanics</h3>
+            <p>
+              Modeling and optimization of beam and shell structures with multiple
+              flexoelectric actuators.
+            </p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-index">03</span>
+            <h3>AI for Design</h3>
+            <p>
+              Physics-informed neural networks, genetic algorithms, and data-driven
+              methods for structural and actuator design.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="publications-title">Publications</h2>
+          <p>
+            Selected journal papers, accepted work, and manuscripts under review.
+            DOI links are included where available.
+          </p>
+        </div>
+        <div class="publication-list">
+          <article class="publication-card">
+            <div class="publication-year">2026</div>
+            <div>
+              <h3>
+                Non-Parametric Design and Multi-Objective Optimization of MEMS
+                Scanning Mirrors via Pixel-Based Genetic Algorithms
+              </h3>
+              <p class="authors">Yiming Li, Hanwen Guo, Junya Wang</p>
+              <p class="venue">Microsystems &amp; Nanoengineering. Accepted.</p>
+              <div class="publication-links">
+                <span class="status-pill">First author</span>
+                <span class="status-pill">Accepted</span>
+              </div>
+            </div>
+          </article>
+          <article class="publication-card">
+            <div class="publication-year">2025</div>
+            <div>
+              <h3>
+                Optimization of Shell Structure with Multiple Flexoelectric Actuators
+                Based on Sequential Quadratic Programming
+              </h3>
+              <p class="authors">Yiming Li, Jie Zhang, Mu Fan, Zhongmin Xiao</p>
+              <p class="venue">International Journal of Mechanics and Materials in Design.</p>
+              <div class="publication-links">
+                <a href="https://doi.org/10.1007/s10999-025-09850-9">DOI</a>
+                <span class="status-pill">First author</span>
+                <span class="status-pill">JCR Q1</span>
+              </div>
+            </div>
+          </article>
+          <article class="publication-card">
+            <div class="publication-year">2024</div>
+            <div>
+              <h3>
+                Optimization of Cantilever Beams with Multiple Flexoelectric Actuators
+                Based on Newton-Raphson Iteration
+              </h3>
+              <p class="authors">Yiming Li, Chen Chen, Mu Fan</p>
+              <p class="venue">Acta Mechanica.</p>
+              <div class="publication-links">
+                <a href="https://doi.org/10.1007/s00707-024-04085-9">DOI</a>
+                <span class="status-pill">First author</span>
+                <span class="status-pill">JCR Q1</span>
+              </div>
+            </div>
+          </article>
+          <article class="publication-card">
+            <div class="publication-year">Under Review</div>
+            <div>
+              <h3>
+                Physics-Informed Neural Networks for Actuator Optimization of
+                Parabolic Shell Structures
+              </h3>
+              <p class="authors">Yiming Li, Jie Zhang, Mu Fan</p>
+              <p class="venue">Journal of Sound and Vibration. Under review.</p>
+            </div>
+          </article>
+          <article class="publication-card">
+            <div class="publication-year">Under Review</div>
+            <div>
+              <h3>Quantization of Flexoelectric Modal Signals in Parabolic Shell Structures</h3>
+              <p class="authors">Tongyu Yin, Yiming Li</p>
+              <p class="venue">Physical Review Applied. Under review.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research Outputs</p>
+          <h2 id="projects-title">Presentations, Patent, and Technical Work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">Conference</div>
+            <h3>BP Neural Network-Based Linear Control for PZT Piezoelectric MEMS Scanning Mirrors</h3>
+            <p>
+              2025 Annual Conference of the China Instrument and Control Society,
+              Changsha, China. Oral and poster presentation.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Invited Talk</div>
+            <h3>Structural Optimization of MEMS Scanning Mirrors Based on Genetic Algorithms</h3>
+            <p>
+              The 3rd International Conference on AI Sensors and Transducers,
+              Jeju, South Korea, August 2026. Invited talk and poster.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Patent</div>
+            <h3>MEMS Large-Angle Scanning Mirror Based on Genetic Algorithm</h3>
+            <p>
+              Patent title: A design of MEMS large-angle scanning mirror based on
+              genetic algorithm and its structure. Status: substantive examination stage.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split" id="cv" aria-labelledby="cv-title">
+        <div class="section-heading">
+          <p class="eyebrow">Background</p>
+          <h2 id="cv-title">Education, Honors, and Skills</h2>
+          <p>
+            A compact public CV summary. Phone number and reference contacts are omitted
+            from this web version.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">Sep 2024 - Present</span>
+            <h3>Huazhong University of Science and Technology</h3>
+            <p>
+              Master of Science in Mechanical Engineering. GPA: 84/100.
+              First-Class Graduate Scholarship, 2024.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Sep 2020 - Jun 2024</span>
+            <h3>Nanjing University of Aeronautics and Astronautics</h3>
+            <p>
+              Bachelor of Engineering in Mechanical Engineering, summa cum laude.
+              GPA: 86/100.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Honors</span>
+            <h3>Selected Awards</h3>
+            <p>
+              National Undergraduate Mathematics Competition Third Prize; Mathematical
+              Contest in Modeling Third Prize; First-Class Academic Scholarship at NUAA
+              for four years; Outstanding Teaching Assistant Award.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Skills</span>
+            <h3>Technical Toolkit</h3>
+            <p>
+              MATLAB, Python, COMSOL Multiphysics, ANSYS, SolidWorks, MEMS fabrication
+              basics, piezoresistive sensors, micro-actuation testing, and dynamical
+              system identification.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">I am open to research discussion and collaboration.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="primary-action" href="mailto:dawn_lee@hust.edu.cn">dawn_lee@hust.edu.cn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="current-year">2026</span> Li Yiming. Built with static HTML for GitHub Pages.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
