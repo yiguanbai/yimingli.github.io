@@ -184,14 +184,14 @@ img {
 
 .hero {
   width: calc(100% - 32px);
-  max-width: 1680px;
+  max-width: 1320px;
   min-height: calc(100vh - 68px);
   margin: 0 auto;
   padding: 76px 0 48px;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(480px, 0.75fr);
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 460px);
   align-items: start;
-  gap: 72px;
+  gap: 64px;
 }
 
 .hero-copy,
@@ -200,6 +200,12 @@ img {
 .link-row,
 .contact-actions {
   min-width: 0;
+}
+
+.hero-copy {
+  width: 100%;
+  max-width: 720px;
+  justify-self: end;
 }
 
 .eyebrow {
@@ -310,7 +316,7 @@ h3 {
 
 .profile-panel {
   width: 100%;
-  max-width: 520px;
+  max-width: 460px;
   justify-self: end;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -596,7 +602,7 @@ h3 {
 
   .profile-panel {
     max-width: 420px;
-    justify-self: start;
+    justify-self: center;
   }
 
   .research-grid,
