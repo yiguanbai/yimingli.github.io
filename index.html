@@ -310,6 +310,8 @@ h3 {
 
 .profile-panel {
   width: 100%;
+  max-width: 360px;
+  justify-self: end;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.76);
@@ -321,9 +323,9 @@ h3 {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  background: #edf1ea;
+  background: var(--paper);
 }
 
 .quick-facts {
@@ -593,6 +595,7 @@ h3 {
 
   .profile-panel {
     max-width: 420px;
+    justify-self: start;
   }
 
   .research-grid,
@@ -752,10 +755,10 @@ if (navToggle && navLinks) {
         <aside class="profile-panel" aria-label="Profile summary">
           <img
             class="profile-photo"
-            src="assets/profile-li-yiming-square.jpg"
+            src="assets/profile-li-yiming-balanced.jpg"
             alt="Hand-drawn profile illustration for Li Yiming"
-            width="567"
-            height="567"
+            width="720"
+            height="720"
           >
           <dl class="quick-facts">
             <div>
