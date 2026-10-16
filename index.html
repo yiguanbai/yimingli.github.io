@@ -281,6 +281,7 @@ h3 {
 .link-row a,
 .publication-links a,
 .contact-actions a,
+.link-row .primary-action,
 .primary-action {
   display: inline-flex;
   min-height: 40px;
@@ -298,17 +299,20 @@ h3 {
 .link-row a:hover,
 .publication-links a:hover,
 .contact-actions a:hover,
+.link-row .primary-action:hover,
 .primary-action:hover {
   border-color: rgba(15, 107, 109, 0.45);
   color: var(--teal);
 }
 
+.link-row .primary-action,
 .primary-action {
   background: var(--ink);
   color: #fff;
   border-color: var(--ink);
 }
 
+.link-row .primary-action:hover,
 .primary-action:hover {
   background: var(--teal);
   color: #fff;
@@ -752,6 +756,7 @@ if (navToggle && navLinks) {
             I work on microelectromechanical systems (MEMS), nonlinear mechanics, and AI-assisted design. My current research focuses on actuator optimization using physics-informed neural networks and genetic algorithms, flexoelectric structures, and MEMS scanning mirrors.
           </p>
           <div class="link-row" aria-label="Profile links">
+            <a class="primary-action" href="assets/Yiming_Li_CV_2026.pdf" download>Download CV (PDF)</a>
             <a href="mailto:dawn_lee@hust.edu.cn">Email</a>
             <a href="#publications">Publications</a>
             <a href="https://www.researchgate.net/profile/Yiming-Li-94?ev=hdr_xprf">ResearchGate</a>
@@ -778,7 +783,7 @@ if (navToggle && navLinks) {
             </div>
             <div>
               <dt>Background</dt>
-              <dd>B.Eng., NUAA; M.S., HUST</dd>
+              <dd>B.Eng., NUAA; M.S. student, HUST</dd>
             </div>
           </dl>
         </aside>
@@ -822,8 +827,8 @@ if (navToggle && navLinks) {
           <p class="eyebrow">Selected Work</p>
           <h2 id="publications-title">Scholarly Publications</h2>
           <p>
-            Five journal papers and manuscripts. Two first-author papers published in JCR Q1 journals.
-            One first-author paper accepted at Nature Partner Journal.
+            Four journal papers and manuscripts: two first-author papers published in JCR Q1 journals
+            and two first-author manuscripts under review.
           </p>
         </div>
         <div class="publication-list">
@@ -870,12 +875,11 @@ if (navToggle && navLinks) {
                 Non-Parametric Design and Multi-Objective Optimization of MEMS
                 Scanning Mirrors via Pixel-Based Genetic Algorithms
               </h3>
-              <p class="authors">Yiming Li, Hanwen Guo, Junya Wang</p>
+              <p class="authors">Yiming Li, Hanwen Guo, Hexiang Guo, Haibo Su, Lingyun Zhang, Junya Wang, Zheng You</p>
               <p class="venue">Microsystems & Nanoengineering (Nature Partner Journal)</p>
               <div class="publication-links">
                 <span class="status-pill">First author</span>
-                <span class="status-pill">Accepted</span>
-                <span class="status-pill">IF=11.1</span>
+                <span class="status-pill">Under review</span>
               </div>
             </div>
           </article>
@@ -883,19 +887,11 @@ if (navToggle && navLinks) {
             <div class="publication-year">Under Review</div>
             <div>
               <h3>
-                Physics-Informed Neural Networks for Actuator Optimization of
-                Parabolic Shell Structures
+                Multi-Actuator Flexoelectric Actuation and
+                Vibration Control of Parabolic Shell Structures
               </h3>
               <p class="authors">Yiming Li, Jie Zhang, Mu Fan</p>
-              <p class="venue">Journal of Sound and Vibration</p>
-            </div>
-          </article>
-          <article class="publication-card">
-            <div class="publication-year">Under Review</div>
-            <div>
-              <h3>Quantization of Flexoelectric Modal Signals in Parabolic Shell Structures</h3>
-              <p class="authors">Tongyu Yin, Yiming Li</p>
-              <p class="venue">Physical Review Applied</p>
+              <p class="venue">International Journal of Mechanical Sciences</p>
             </div>
           </article>
         </div>
